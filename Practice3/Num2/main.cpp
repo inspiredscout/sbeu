@@ -13,15 +13,16 @@ int main()
 	rational* arr = new rational[size];
 	int a, b;
 
+	cout << "Вводить числа нужно строго через пробел\n";
 	for (int i = 0; i < size; i++)
 	{
-		cout << i + 1 << " : "; cin >> a >> b;
+		cout << "Введите числитель и знаминатель дроби номер " << i + 1 << " : "; cin >> a >> b;
 		(arr[i]).set(a,b);
 	}
 	cout << "\n";
 	for (int i = 0; i < size; i++)
 	{
-		cout << i + 1 << " : ";
+		cout << "\nДробь номер " << i + 1 << " : ";
 		(arr[i]).show();
 	}
 	cout << "\n";
